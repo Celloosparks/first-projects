@@ -4,5 +4,7 @@
 
 - Descobrir a partir da sua velocidade se vai ser multado ou não;
 
+- Calculadora Simples;
+
   Códigos de iniciante em programação.
 
