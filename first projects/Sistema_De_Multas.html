@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+    <style>
+        body{
+      font: normal 18pt arial;
+
+        }
+    </style>
+</head>
+<body>
+    <h1> Sistema Brasileiro de Multas </h1>
+    <input type="number" name=" velocidade " id="vel1">
+    <input type="button" value="Resultado" onClick = "somar()">
+
+    <div id="res"> Resultado </div>
+    <script> 
+
+    function somar() {
+
+var vel1 = document.getElementById ("vel1")
+var res = document.getElementById ( "res")
+var tn1 = Number (vel1.value)
+res.innerHTML =  `<p> Sua velocidade atual é de <strong> ${tn1} km/h </strong> </p>`
+if (tn1 > 60) {
+    res.innerHTML += `<p> <strong> Voce está multado </strong> </p>` 
+
+} else {
+
+    res.innerHTML += ` <p> <strong> Voce não está multado </strong> </p> `
+}
+
+
+res.innerHTML += `<p> Dirija com cuidado, boa viagem </p>`
+
+    }
+    </script>
+</body>
+</html>

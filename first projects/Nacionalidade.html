@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Descobrir Nacionalidade </title>
+    <style>
+        body {
+
+            font: normal 18pt arial;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1> Descobrindo Nacionalidade</h1>
+    <input type="text" placeholder= "Informe Seu País" name="Pais5" id="pais">
+    <input type="button" value="Resultado" onClick="calcular()">
+    <div id="res"> Resultado </div>
+
+<script>
+    function calcular() {
+    var pais = document.querySelector('#pais').value
+    var res1 = document.querySelector('#res') 
+    if (pais == 'Brasil') {
+
+        res1.innerHTML = `<p> <strong> Voce é Brasileiro </strong> </p>`
+    } else {
+
+        res1.innerHTML = `<p> <strong> Voce é Estrangeiro </strong> </p>`
+    }
+    }
+
+    
+</script>
+</body>
+</html>
